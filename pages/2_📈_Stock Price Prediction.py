@@ -1,6 +1,6 @@
 import streamlit as st
-from fbprophet import Prophet
-from fbprophet.plot import plot_plotly, plot_components_plotly
+from prophet import Prophet
+from prophet.plot import plot_plotly, plot_components_plotly
 import yfinance as yf
 from datetime import date
 import requests
