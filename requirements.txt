@@ -12,3 +12,4 @@ wordcloud~=1.8.2.2
 beautifulsoup4~=4.11.1
 streamlit-lottie~=0.0.3
 pystan~=2.19.1.1
+prophet~=1.0.1
