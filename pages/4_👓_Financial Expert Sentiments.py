@@ -44,7 +44,7 @@ if clicked1:
     if len(dropdown) > 0:
         news_tables = {}
         for ticker in dropdown:
-            parsed_data=pd.read_csv("df.csv")
+            parsed_data=pd.read_csv("investment_assistance/pages/df.csv")
         df = pd.DataFrame(parsed_data, columns=['ticker', 'date', 'time', 'title'])
         nltk.download('vader_lexicon')
         vader = SentimentIntensityAnalyzer()
