@@ -63,7 +63,7 @@ with st.expander('Click to Learn more about different Investor Profiles'):
     st.markdown('### Investor Profiles For Reference ')
     #image = Image.open(r"C:\Users\aiman\Downloads\investor profile.png")
     #new_image = image.resize((900, 400))
-    st.image("https://www.principal.com.my/sites/default/files/inline-images/risk%20profile.png", caption='Investor profiles For Reference.Source : Pricipal Malaysia',width=900)
+    st.image("https://www.principal.com.my/sites/default/files/inline-images/risk%20profile.png", caption='Investor profiles For Reference.Source : Pricipal Malaysia')
     st.write("Conservative : I want to keep my capital.My main priority is to safeguard my investments capital. I feel safe to invest provided my capital invested is exposed to very little risk. I am willing to accept a minimal or very low potential returns; as long as my investment capital is retained.")
     st.write("Mildly Conservative : I want to earn small returns.My primary goal is to gain some returns from investments capital. I am willing to accept returns that are potentially higher than banks’ fixed deposit rate as long as my investments capital is expose to minimal level risk.")
     st.write("Moderate : I want to reap moderate returns.My focus is to obtain moderate returns by diversifying my investments capital. I am convinced that in order to achieve potentially moderate returns I have to be prepared to take a moderate level of risk. I am willing to keep my capital and returns invested in the short to medium term. I want to see my investments grow and increase over the long-term.")
@@ -152,6 +152,6 @@ if clicked2:
         with c2:
             st.write('')
             st.write(' Recommended Amount Return vs Risk')
-            st.dataframe(data=df['Amount To Invest(Rs.)'], width=400, height=None)
+            st.dataframe(data=df['Amount To Invest(Rs.)'])
         st.write(":information_source: Hover Over The Graph To See It's Interactive And Downloadable Features")
         st.write("---")

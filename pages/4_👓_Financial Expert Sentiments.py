@@ -30,7 +30,7 @@ dropdown = st.multiselect('Select One Or More Stocks/Futures/Forex You Want Fina
 clicked1=st.button('Predict')
 with st.expander('Click If You Are Unfamiliar With Any Of The Above Symbols'):
     st.write("DOW:Dow Jones Industry Average")
-    st.write("DOW:S&P 500")
+    st.write("ES:S&P 500")
     st.write("HDB:HDFC Bank Limited")
     st.write("IBN:ICICI Bank Limited")
     st.write("INFY:Infosys Limited")
@@ -43,37 +43,20 @@ if clicked1:
     st.info(':information_source: Scroll down to obtain the data..:clock4:')
     if len(dropdown) > 0:
         news_tables = {}
-        for ticker in dropdown:
-            url = finviz_url + ticker
-            req = Request(url=url, headers={'user-agent': 'my-app'})
-            response = urlopen(req)
-            print(response)
-            html = BeautifulSoup(response, features='html.parser')
-            news_table = html.find(id='news-table')
-            news_tables[ticker] = news_table
-        parsed_data = []
-        for ticker, news_table in news_tables.items():
-
-            for row in news_table.findAll('tr'):
-
-                title = row.a.text
-                date_data = row.td.text.split(' ')
-
-                if len(date_data) == 1:
-                    time = date_data[0]
-                else:
-                    date = date_data[0]
-                    time = date_data[1]
-
-                parsed_data.append([ticker, date, time, title])
-        df = pd.DataFrame(parsed_data, columns=['ticker', 'date', 'time', 'title'])
+        df = pd.read_csv(r"C:\Users\aiman\PycharmProjects\investment_assistance\df.csv")
+        df1 = pd.DataFrame()
+        want = dropdown
+        for wants in want:
+            for index, row in df.iterrows():
+                if wants == row["ticker"]:
+                    df1 = df1.append(row, ignore_index=True)
         nltk.download('vader_lexicon')
         vader = SentimentIntensityAnalyzer()
         f = lambda title: vader.polarity_scores(title)['compound']
-        df['compound'] = df['title'].apply(f)
-        df['date'] = pd.to_datetime(df.date).dt.date
+        df1['compound'] = df1['title'].apply(f)
+        df1['date'] = pd.to_datetime(df1.date).dt.date
         fig = plt.figure(figsize=(10, 20))
-        mean_df = df.groupby(['ticker', 'date']).mean().unstack()
+        mean_df = df1.groupby(['ticker', 'date']).mean().unstack()
         mean_df = mean_df.xs('compound', axis="columns")
         mean_df.plot(kind='bar')
         # plt.legend().set_visible(False)
