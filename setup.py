@@ -223,7 +223,7 @@ class TestCommand(test_command):
 with open("README.md", "r", encoding="utf-8") as f:
     long_description = f.read()
 
-with open("requirements.txt", "r") as f:
+with open("requirements1.txt", "r") as f:
     install_requires = f.read().splitlines()
 
 about = {}
