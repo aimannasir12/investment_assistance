@@ -47,7 +47,7 @@ if clicked1:
             url = finviz_url + ticker
             req = Request(url=url, headers={'user-agent': 'my-app'})
             response = urlopen(req)
-            print(response)
+            st.write(response)
             html = BeautifulSoup(response, features='html.parser')
             news_table = html.find(id='news-table')
             news_tables[ticker] = news_table
