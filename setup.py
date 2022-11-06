@@ -242,7 +242,7 @@ setup(
     author=about["__author__"],
     author_email=about["__author_email__"],
     license=about["__license__"],
-    packages=find_packages(),
+    packages=find_namespace_packages(),
     install_requires=install_requires,
     python_requires=">=3.7",
     zip_safe=False,
