@@ -43,7 +43,7 @@ if clicked1:
     st.info(':information_source: Scroll down to obtain the data..:clock4:')
     if len(dropdown) > 0:
         news_tables = {}
-        df = pd.read_csv(r"C:\Users\aiman\PycharmProjects\investment_assistance\df.csv")
+        df = pd.read_csv(r"df.csv")
         df1 = pd.DataFrame()
         want = dropdown
         for wants in want:
