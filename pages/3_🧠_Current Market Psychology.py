@@ -2,6 +2,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import nltk
+nltk.data.path.append(r'C:\Users\aiman\PycharmProjects\investment_assistance\nltk_data')
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 from nltk.stem.porter import *
