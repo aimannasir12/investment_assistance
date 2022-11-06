@@ -1,12 +1,4 @@
-stopwords
-WordNetLemmatizer
+corpus
+stem
 wordnet
 omw-1.4
-PorterStemmer
-SentimentIntensityAnalyzer
-vader_lexicon
-averaged_perceptron_tagger
-RegexpParser
-regexp_tokenize
-pos_tag
-conll2000
