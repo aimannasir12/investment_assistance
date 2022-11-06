@@ -46,6 +46,7 @@ if clicked1:
         for ticker in dropdown:
             url = finviz_url + ticker
             req = Request(url=url, headers={'user-agent': 'my-app'})
+            st.write(req)
             response = urlopen(req)
             st.write(response)
             html = BeautifulSoup(response, features='html.parser')
