@@ -228,7 +228,7 @@ with open("requirements.txt", "r") as f:
 
 about = {}
 here = Path(__file__).parent.resolve()
-with open(here / "prophet" /  "__version__.py", "r") as f:
+with open("__version__.py", "r") as f:
     exec(f.read(), about)
 
 setup(
