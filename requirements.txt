@@ -13,3 +13,4 @@ bs4~=0.0.1
 beautifulsoup4~=4.11.1
 prophet-prebuilt==1.0.2
 streamlit-lottie~=0.0.3
+urllib3~=1.26.11
