@@ -101,7 +101,7 @@ if clicked:
         i7 = symbol['recommendationKey']
         st.write(f"Recommendation : {i7}")
     indicators_load_state = st.text('Calculating Indicators...')
-    c1, c2 = st.columns((7, 3))
+    c1, c2 = st.columns((4, 4))
     import numpy as np
     plot_bgcolor = "#FFFFFF"
     quadrant_colors = [plot_bgcolor, "#f25829", "#f2a529", "#eff229", "#85e043", "#2bad4e"]
