@@ -1,5 +1,5 @@
 import streamlit as st
-st.set_page_config(page_title="Feel Free To Suggest Improvements")
+st.set_page_config(page_title="Feel Free To Suggest Improvements,page_icon="✉️"")
 st.header(":mailbox: Get In Touch With Us!")
 st.write("We Are Eager To Help With Relevant Queries And Look Forward To Your Suggestions.:smile:")
 page_bg_img1="""
