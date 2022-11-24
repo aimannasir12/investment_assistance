@@ -34,7 +34,7 @@ with st.expander('Click If You Are Unfamiliar With Any Of The Above Symbols'):
     st.write("HDB:HDFC Bank Limited")
     st.write("IBN:ICICI Bank Limited")
     st.write("INFY:Infosys Limited")
-    st.write("INFY:Tata Motors Limited")
+    st.write("TTM:Tata Motors Limited")
     st.write("WIT:Wipro Limited")
 if clicked1:
     with st.spinner('This may take a little while...'):
