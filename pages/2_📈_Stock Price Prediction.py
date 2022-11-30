@@ -27,7 +27,7 @@ st_lottie(lottie_stocks, height=270, width=700)
 st.write("Visualise The Predicted Price Of A Stock Based On Factors Such As The Company's Financial Performance Over A Period Of Your Choice.! We Have Provided Information For Popular Indian And U.S. Stocks")
 st.write("Select A Stock From The Menu And Move The Slider Around To Select The Number Of Years You Want The Prediction For.The Plots Generated Are Interactive And Downloadable, So Feel Free To Play Around.:wink:")
 stocks = (
-'APOLLOHOSP.NS','AAPL','ADANIENT.NS','AMZN','BAJAJ-AUTO.NS','BHARTIARTL.NS','BRITANNIA.NS','CIPLA.NS',
+'ES=F','^DJI','APOLLOHOSP.NS','AAPL','ADANIENT.NS','AMZN','BAJAJ-AUTO.NS','BHARTIARTL.NS','BRITANNIA.NS','CIPLA.NS',
 'COALINDIA.NS','GOOG','HDFCLIFE.NS',  'ICICIBANK.NS','INDUSINDBK.NS',  'ITC.NS','MARUTI.NS','MSFT',
 'NESTLEIND.NS','RELIANCE.NS','TATASTEEL.NS','TCS.NS','TITAN.NS','TSLA',
  'ULTRACEMCO.NS','WIPRO.NS')
