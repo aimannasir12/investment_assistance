@@ -25,13 +25,13 @@ previous = st.sidebar.checkbox('Show Performance On Previous Crashes')
 details = st.sidebar.checkbox('Show Model Performance Details')
 if type_market=="S&P500":
     if months=="1":
-       image1 = Image.open(r"C:\Users\aiman\Downloads\17-22(1).png")
+       image1 = Image.open(r"17-22(1).png")
        st.image(image1, caption="S&P500 Crash predictor for 1 month", width=None, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
     if months=="3":
-       image2 = Image.open(r"C:\Users\aiman\Downloads\17-22(3).png")
+       image2 = Image.open(r"17-22(3).png")
        st.image(image2, caption="S&P500 Crash predictor for 3 months", width=None, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
     if months=="6":
-       image3 = Image.open(r"C:\Users\aiman\Downloads\17-22(6).png")
+       image3 = Image.open(r"17-22(6).png")
        st.image(image3, caption="S&P500 Crash predictor for 6 months", width=None, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
     st.write("---")
     df = pd.DataFrame({"col_1": ['Confidence Score Of Crash Happening In 1 Month',
@@ -47,19 +47,19 @@ if type_market=="S&P500":
     st.write("Confidence score of prediction of a crash within the next month 6 interval: 0.93")
     st.write("---")
     if previous:
-       image4 = Image.open(r"C:\Users\aiman\Downloads\04-10(6).png")
+       image4 = Image.open(r"04-10(6).png")
        st.image(image4, caption="Crash predictor Performance for 2004-2010", width=None, use_column_width=None, clamp=False,
                      channels="RGB", output_format="auto")
-       image5 = Image.open(r"C:\Users\aiman\Downloads\95-03(6).png")
+       image5 = Image.open(r"95-03(6).png")
        st.image(image5, caption="Crash predictor Performance for 1995-2003", width=None, use_column_width=None, clamp=False,
                 channels="RGB", output_format="auto")
-       image6 = Image.open(r"C:\Users\aiman\Downloads\83-88(6).png")
+       image6 = Image.open(r"83-88(6).png")
        st.image(image6, caption="Crash predictor Performance for 1983-1988", width=None, use_column_width=None, clamp=False,
                 channels="RGB", output_format="auto")
-       image7 = Image.open(r"C:\Users\aiman\Downloads\76-83(6).png")
+       image7 = Image.open(r"76-83(6).png")
        st.image(image7, caption="Crash predictor Performance for 1976-1983", width=None, use_column_width=None, clamp=False,
                 channels="RGB", output_format="auto")
-       image8 = Image.open(r"C:\Users\aiman\Downloads\71-81(6).png")
+       image8 = Image.open(r"71-81(6).png")
        st.image(image8, caption="Crash predictor Performance 1971-1981", width=None, use_column_width=None, clamp=False,
                 channels="RGB", output_format="auto")
        if details:
@@ -70,15 +70,15 @@ if type_market=="S&P500":
            st.write("Score test fbeta:                   0.54 / 0.32")
 if type_market == "BSE":
         if months == "1":
-            image1 = Image.open(r"C:\Users\aiman\Downloads\17-22(1) b.png")
+            image1 = Image.open(r"17-22(1) b.png")
             st.image(image1, caption="S&P500 Crash predictor for 1 month", width=None, use_column_width=None,
                      clamp=False, channels="RGB", output_format="auto")
         if months == "3":
-            image2 = Image.open(r"C:\Users\aiman\Downloads\17-22(3) b.png")
+            image2 = Image.open(r"17-22(3) b.png")
             st.image(image2, caption="S&P500 Crash predictor for 3 months", width=None, use_column_width=None,
                      clamp=False, channels="RGB", output_format="auto")
         if months == "6":
-            image3 = Image.open(r"C:\Users\aiman\Downloads\19-22(6) b.png")
+            image3 = Image.open(r"19-22(6) b.png")
             #image3=image3a.rotate(90)
             st.image(image3, caption="S&P500 Crash predictor for 6 months", width=None, use_column_width=None,
                      clamp=False, channels="RGB", output_format="auto")
@@ -96,23 +96,23 @@ if type_market == "BSE":
         st.write("Confidence score of prediction of a crash within the next month 6 interval: 0.8")
         st.write("---")
         if previous:
-            image4 = Image.open(r"C:\Users\aiman\Downloads\04-10(6) b.png")
+            image4 = Image.open(r"04-10(6) b.png")
             st.image(image4, caption="Crash predictor Performance for 2004-2010", width=None, use_column_width=None,
                      clamp=False,
                      channels="RGB", output_format="auto")
-            image5 = Image.open(r"C:\Users\aiman\Downloads\95-03(6) b.png")
+            image5 = Image.open(r"95-03(6) b.png")
             st.image(image5, caption="Crash predictor Performance for 1995-2003", width=None, use_column_width=None,
                      clamp=False,
                      channels="RGB", output_format="auto")
-            image6 = Image.open(r"C:\Users\aiman\Downloads\83-88(6) b.png")
+            image6 = Image.open(r"83-88(6) b.png")
             st.image(image6, caption="Crash predictor Performance for 1983-1988", width=None, use_column_width=None,
                      clamp=False,
                      channels="RGB", output_format="auto")
-            image7 = Image.open(r"C:\Users\aiman\Downloads\76-83(6) b.png")
+            image7 = Image.open(r"76-83(6) b.png")
             st.image(image7, caption="Crash predictor Performance for 1976-1983", width=None, use_column_width=None,
                      clamp=False,
                      channels="RGB", output_format="auto")
-            image8 = Image.open(r"C:\Users\aiman\Downloads\71-81(6) b.png")
+            image8 = Image.open(r"71-81(6) b.png")
             st.image(image8, caption="Crash predictor Performance 1971-1981", width=None, use_column_width=None,
                      clamp=False,
                      channels="RGB", output_format="auto")
